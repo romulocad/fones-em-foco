@@ -50,6 +50,7 @@ const PRODUCTS = [
     review:
       "Abre a tampa e já conecta sozinho — dispensa aquele ritual de segurar botão. Tem cancelamento de ruído ativo, nota 4.8 e mais de 100 mil unidades vendidas, o que dá segurança de que não é sorte: é o tipo de fone que resolve o dia a dia sem drama.",
     icon: "premium",
+    image: "img/produtos/pop-up-anc.webp",
     featured: true,
     affiliateLink: "https://s.shopee.com.br/gQ4VgaxQg",
   },
@@ -64,6 +65,7 @@ const PRODUCTS = [
     review:
       "Feito pra quem dorme com fone no ouvido: bem fino, não incomoda deitado de lado, e tem display LED pra ver a carga da bateria sem abrir o app. Nota máxima (5.0) dos compradores.",
     icon: "earbuds",
+    image: "img/produtos/senbenbao-x55.webp",
     affiliateLink: "https://s.shopee.com.br/50Z3fhjvFX",
   },
   {
@@ -77,6 +79,7 @@ const PRODUCTS = [
     review:
       "Assinatura Xiaomi por menos de R$ 20 — pra quem confia mais numa marca conhecida do que num nome genérico. Compacto, estojo recarregável, e mais de 40 mil vendidos confirmam que não é só a marca que convence.",
     icon: "earbuds",
+    image: "img/produtos/xiaomi-redmi-airdots.webp",
     affiliateLink: "https://s.shopee.com.br/1BML6gSqFK",
   },
   {
@@ -90,6 +93,7 @@ const PRODUCTS = [
     review:
       "Sobe de faixa de preço mas entrega imersão de verdade: cancelamento de ruído mais robusto e acabamento que parece fone de loja física. Boa opção pra quem já usou fone barato e quer sentir a diferença.",
     icon: "premium",
+    image: "img/produtos/pro5-premium.webp",
     affiliateLink: "https://s.shopee.com.br/5q8AfHb08L",
   },
   {
@@ -103,6 +107,7 @@ const PRODUCTS = [
     review:
       "Pensado pra quem transpira: bateria de longa duração pra não deixar na mão no meio do treino, e o formato foi desenhado pra ficar firme correndo. Nota 4.9, a mais alta da nossa lista.",
     icon: "sport",
+    image: "img/produtos/corrida-academia.webp",
     affiliateLink: "https://s.shopee.com.br/5VVKH22RXm",
   },
   {
@@ -116,6 +121,7 @@ const PRODUCTS = [
     review:
       "Leve e recarregável, serve tanto pra caminhada quanto pro dia a dia no transporte. Mais de 100 mil vendidos — um dos fones mais comprados da Shopee no nicho.",
     icon: "sport",
+    image: "img/produtos/p9-air-esportivo.webp",
     affiliateLink: "https://s.shopee.com.br/112uumWZm6",
   },
   {
@@ -129,6 +135,7 @@ const PRODUCTS = [
     review:
       "Tem microfone e display digital mostrando a % de bateria do case, dois detalhes que fazem diferença em reunião ou ligação rápida. Cancelamento de ruído ajuda a isolar a voz do que está ao redor.",
     icon: "call",
+    image: "img/produtos/e6s-preta-display.webp",
     affiliateLink: "https://s.shopee.com.br/60RarzUnyX",
   },
   {
@@ -142,6 +149,7 @@ const PRODUCTS = [
     review:
       "O mais vendido da nossa lista — mais de 200 mil unidades. Redução de ruído nas chamadas e conexão estável são os motivos mais citados nas avaliações de quem usa pra trabalho.",
     icon: "call",
+    image: "img/produtos/p47-headphone.webp",
     affiliateLink: "https://s.shopee.com.br/qjUiW5fXD",
   },
   {
@@ -155,6 +163,7 @@ const PRODUCTS = [
     review:
       "Pra quem gosta do visual clássico de fone branco sem pagar preço de original. Compatível com Android e iOS, e mais de 40 mil compradores validaram que o design não é só estética.",
     icon: "earbuds",
+    image: "img/produtos/airpods-pro-3-style.webp",
     affiliateLink: "https://s.shopee.com.br/4qFdTtBy1W",
   },
   {
@@ -168,6 +177,7 @@ const PRODUCTS = [
     review:
       "O mais barato da lista, mas isso não impediu 90 mil vendas: bateria leve e estojo portátil, indicado até pra quem dorme com o fone no ouvido.",
     icon: "earbuds",
+    image: "img/produtos/pro4-tws.webp",
     affiliateLink: "https://s.shopee.com.br/5LBu4pMveK",
   },
 ];

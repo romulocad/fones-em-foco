@@ -345,6 +345,20 @@ section {
   justify-content: center;
   padding: 28px;
   color: var(--green);
+  overflow: hidden;
+}
+
+.featured-icon img,
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.featured-icon:has(img),
+.card-icon:has(img) {
+  padding: 0;
 }
 
 .featured-badge {
@@ -511,6 +525,7 @@ section {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  overflow: hidden;
 }
 
 .tag {

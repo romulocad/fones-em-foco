@@ -28,6 +28,11 @@ const ICONS = {
   </svg>`,
 };
 
+const mediaMarkup = (product) =>
+  product.image
+    ? `<img src="${product.image}" alt="${product.name}" loading="lazy" />`
+    : ICONS[product.icon] || ICONS.earbuds;
+
 const money = (value) =>
   value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
@@ -84,7 +89,7 @@ function renderFeatured() {
   if (!product || !mount) return;
 
   mount.innerHTML = `
-    <div class="featured-icon">${ICONS[product.icon] || ICONS.earbuds}</div>
+    <div class="featured-icon">${mediaMarkup(product)}</div>
     <div>
       <span class="featured-badge">★ Escolha do editor</span>
       <h3>${product.name}</h3>
@@ -108,7 +113,7 @@ function productCard(product) {
   return `
     <article class="product-card" data-category="${product.category}">
       <div class="card-top">
-        <div class="card-icon">${ICONS[product.icon] || ICONS.earbuds}</div>
+        <div class="card-icon">${mediaMarkup(product)}</div>
         <span class="tag">${categoryLabel}</span>
       </div>
       <h3>${product.name}</h3>

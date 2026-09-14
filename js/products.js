@@ -26,8 +26,13 @@ const CATEGORIES = [
 
 // ============================================================
 // PRODUTOS
-// - `affiliateLink`: cole aqui o link de afiliado da Shopee
-//   assim que seu cadastro for aprovado (hoje está "#").
+// Dados reais coletados na Shopee em 14/09/2026 (nome, preço,
+// nota, vendas) e links de afiliado gerados no Portal de
+// Afiliados da Shopee (Marcelo Rômulo).
+//
+// - `affiliateLink`: já é o link de afiliado real (s.shopee.com.br/...).
+//   Se um produto sair de linha na Shopee, gere um novo link em
+//   affiliate.shopee.com.br → Oferta de produto → Obter link.
 // - `featured: true` marca o produto de destaque (Escolha do
 //   editor). Deixe só UM produto como featured.
 // - `rating`: nota de 0 a 5 (aceita meio ponto, ex: 4.5).
@@ -35,134 +40,134 @@ const CATEGORIES = [
 // ============================================================
 const PRODUCTS = [
   {
-    id: "m10-tws",
-    name: "M10 TWS",
-    category: "custo-beneficio",
-    price: 19.9,
-    rating: 5,
+    id: "pop-up-anc",
+    name: "Fone Pop-Up Cancelamento de Ruído",
+    category: "premium",
+    price: 42.89,
+    rating: 4.8,
     badge: "Mais vendido",
-    salesLabel: "18 mil+ vendas",
+    salesLabel: "100 mil+ vendas",
     review:
-      "O fone mais vendido da Shopee no nicho, e não é à toa: som equilibrado, case compacto e um custo por unidade que nenhum concorrente encosta. Para quem quer um TWS de entrada sem arriscar, é o pedido mais seguro do catálogo.",
-    icon: "earbuds",
+      "Abre a tampa e já conecta sozinho — dispensa aquele ritual de segurar botão. Tem cancelamento de ruído ativo, nota 4.8 e mais de 100 mil unidades vendidas, o que dá segurança de que não é sorte: é o tipo de fone que resolve o dia a dia sem drama.",
+    icon: "premium",
     featured: true,
-    affiliateLink: "#",
+    affiliateLink: "https://s.shopee.com.br/gQ4VgaxQg",
   },
   {
-    id: "inpods-13",
-    name: "Inpods 13",
+    id: "senbenbao-x55",
+    name: "Senbenbao X55 TWS Sono",
     category: "custo-beneficio",
-    price: 24.9,
-    rating: 4.5,
-    badge: "Custo-benefício",
-    salesLabel: "9 mil+ vendas",
-    review:
-      "Visual inspirado nos fones da Apple por um preço de fone genérico. Toque touch funciona bem e a bateria do case aguenta o dia todo. Ótima opção pra presentear ou pra ter de reserva.",
-    icon: "earbuds",
-    affiliateLink: "#",
-  },
-  {
-    id: "e6s-tws",
-    name: "E6S TWS",
-    category: "custo-beneficio",
-    price: 22.5,
-    rating: 4,
-    badge: "Custo-benefício",
-    salesLabel: "6 mil+ vendas",
-    review:
-      "Simples e direto: conecta rápido, não corta o som e o microfone dá conta de uma ligação rápida. Não é o mais bonito da lista, mas cumpre o que promete.",
-    icon: "earbuds",
-    affiliateLink: "#",
-  },
-  {
-    id: "kodi-tws200",
-    name: "Kodi TWS200",
-    category: "treino",
-    price: 34.9,
-    rating: 4.5,
-    badge: "Treino",
-    salesLabel: "4 mil+ vendas",
-    review:
-      "Encaixe mais firme que o padrão TWS, pensado pra quem treina. Resistência a suor relatada pelos compradores nas avaliações e não costuma cair durante corrida ou academia.",
-    icon: "sport",
-    affiliateLink: "#",
-  },
-  {
-    id: "1hora-aut201",
-    name: "1HORA AUT201",
-    category: "treino",
-    price: 29.9,
-    rating: 4,
-    badge: "Treino",
-    salesLabel: "3 mil+ vendas",
-    review:
-      "Leve, com haste curta que não bate no capacete nem no boné — boa pedida pra quem pedala ou corre na rua. Autonomia de bateria consistente com o que a loja anuncia.",
-    icon: "sport",
-    affiliateLink: "#",
-  },
-  {
-    id: "helmarq-bluetooth",
-    name: "Helmarq Bluetooth",
-    category: "trabalho",
-    price: 39.9,
-    rating: 4,
-    badge: "Chamadas",
-    salesLabel: "2 mil+ vendas",
-    review:
-      "Microfone com cancelamento de ruído básico que se sai bem em reunião e ligação. Não é o fone pra ouvir música com grave forte, mas é confiável pro home office.",
-    icon: "call",
-    affiliateLink: "#",
-  },
-  {
-    id: "kz-edx-pro",
-    name: "KZ EDX Pro",
-    category: "premium",
-    price: 89.9,
+    price: 13.6,
     rating: 5,
-    badge: "Premium",
-    salesLabel: "1,5 mil+ vendas",
-    review:
-      "A KZ é marca conhecida entre quem curte áudio de verdade — driver híbrido, grave presente e agudos limpos. Sai do padrão fone-de-brinde e entrega som de fone intermediário de verdade.",
-    icon: "premium",
-    affiliateLink: "#",
-  },
-  {
-    id: "xo-tws",
-    name: "XO TWS",
-    category: "premium",
-    price: 74.9,
-    rating: 4.5,
-    badge: "Premium",
-    salesLabel: "1 mil+ vendas",
-    review:
-      "Cancelamento de ruído ativo em um preço que normalmente só se vê em fone bem mais caro. Acabamento com aparência premium e app próprio pra ajustar o equalizador.",
-    icon: "premium",
-    affiliateLink: "#",
-  },
-  {
-    id: "jbl-tune-220tws",
-    name: "JBL Tune 220TWS",
-    category: "trabalho",
-    price: 129.9,
-    rating: 4.5,
-    badge: "Marca confiável",
-    salesLabel: "800+ vendas",
-    review:
-      "Se o critério é marca conhecida e garantia mais tranquila, a JBL entrega. Chamadas com voz nítida, app JBL Headphones pra ajustar o som e a segurança de comprar de fabricante grande.",
-    icon: "call",
-    affiliateLink: "#",
-  },
-  {
-    id: "multilaser-pulse-expert",
-    name: "Multilaser Pulse Expert",
-    category: "custo-beneficio",
-    price: 59.9,
-    rating: 4,
     badge: "Custo-benefício",
-    salesLabel: "1,2 mil+ vendas",
+    salesLabel: "20 mil+ vendas",
     review:
-      "Multilaser é outra marca nacional fácil de assistência técnica. Esse modelo equilibra bateria, som e microfone sem pesar no bolso — bom meio-termo pra quem quer sair do fone de R$ 20.",
+      "Feito pra quem dorme com fone no ouvido: bem fino, não incomoda deitado de lado, e tem display LED pra ver a carga da bateria sem abrir o app. Nota máxima (5.0) dos compradores.",
     icon: "earbuds",
-    affiliateLink: "#",
+    affiliateLink: "https://s.shopee.com.br/50Z3fhjvFX",
+  },
+  {
+    id: "xiaomi-redmi-airdots",
+    name: "Xiaomi Redmi Airdots",
+    category: "custo-beneficio",
+    price: 19.79,
+    rating: 4.8,
+    badge: "Custo-benefício",
+    salesLabel: "40 mil+ vendas",
+    review:
+      "Assinatura Xiaomi por menos de R$ 20 — pra quem confia mais numa marca conhecida do que num nome genérico. Compacto, estojo recarregável, e mais de 40 mil vendidos confirmam que não é só a marca que convence.",
+    icon: "earbuds",
+    affiliateLink: "https://s.shopee.com.br/1BML6gSqFK",
+  },
+  {
+    id: "pro5-premium",
+    name: "Fone Bluetooth Pro5 Premium",
+    category: "premium",
+    price: 66.88,
+    rating: 4.7,
+    badge: "Premium",
+    salesLabel: "100 mil+ vendas",
+    review:
+      "Sobe de faixa de preço mas entrega imersão de verdade: cancelamento de ruído mais robusto e acabamento que parece fone de loja física. Boa opção pra quem já usou fone barato e quer sentir a diferença.",
+    icon: "premium",
+    affiliateLink: "https://s.shopee.com.br/5q8AfHb08L",
+  },
+  {
+    id: "corrida-academia",
+    name: "Fone Bluetooth Corrida e Academia",
+    category: "treino",
+    price: 40.99,
+    rating: 4.9,
+    badge: "Treino",
+    salesLabel: "40 mil+ vendas",
+    review:
+      "Pensado pra quem transpira: bateria de longa duração pra não deixar na mão no meio do treino, e o formato foi desenhado pra ficar firme correndo. Nota 4.9, a mais alta da nossa lista.",
+    icon: "sport",
+    affiliateLink: "https://s.shopee.com.br/5VVKH22RXm",
+  },
+  {
+    id: "p9-air-esportivo",
+    name: "P9 Air Top Casual Esportivo",
+    category: "treino",
+    price: 24.87,
+    rating: 4.7,
+    badge: "Treino",
+    salesLabel: "100 mil+ vendas",
+    review:
+      "Leve e recarregável, serve tanto pra caminhada quanto pro dia a dia no transporte. Mais de 100 mil vendidos — um dos fones mais comprados da Shopee no nicho.",
+    icon: "sport",
+    affiliateLink: "https://s.shopee.com.br/112uumWZm6",
+  },
+  {
+    id: "e6s-preta-display",
+    name: "E6S Preta TWS com Display",
+    category: "trabalho",
+    price: 16.26,
+    rating: 4.8,
+    badge: "Chamadas",
+    salesLabel: "100 mil+ vendas",
+    review:
+      "Tem microfone e display digital mostrando a % de bateria do case, dois detalhes que fazem diferença em reunião ou ligação rápida. Cancelamento de ruído ajuda a isolar a voz do que está ao redor.",
+    icon: "call",
+    affiliateLink: "https://s.shopee.com.br/60RarzUnyX",
+  },
+  {
+    id: "p47-headphone",
+    name: "Fone P47 Headphone",
+    category: "trabalho",
+    price: 18.98,
+    rating: 4.8,
+    badge: "Chamadas",
+    salesLabel: "200 mil+ vendas",
+    review:
+      "O mais vendido da nossa lista — mais de 200 mil unidades. Redução de ruído nas chamadas e conexão estável são os motivos mais citados nas avaliações de quem usa pra trabalho.",
+    icon: "call",
+    affiliateLink: "https://s.shopee.com.br/qjUiW5fXD",
+  },
+  {
+    id: "airpods-pro-3-style",
+    name: "Fone Bluetooth Air Pods Pro 3 (Android & iOS)",
+    category: "custo-beneficio",
+    price: 26.99,
+    rating: 4.6,
+    badge: "Custo-benefício",
+    salesLabel: "40 mil+ vendas",
+    review:
+      "Pra quem gosta do visual clássico de fone branco sem pagar preço de original. Compatível com Android e iOS, e mais de 40 mil compradores validaram que o design não é só estética.",
+    icon: "earbuds",
+    affiliateLink: "https://s.shopee.com.br/4qFdTtBy1W",
+  },
+  {
+    id: "pro4-tws",
+    name: "Pro 4 TWS Sem Fio",
+    category: "custo-beneficio",
+    price: 12.38,
+    rating: 4.8,
+    badge: "Custo-benefício",
+    salesLabel: "90 mil+ vendas",
+    review:
+      "O mais barato da lista, mas isso não impediu 90 mil vendas: bateria leve e estojo portátil, indicado até pra quem dorme com o fone no ouvido.",
+    icon: "earbuds",
+    affiliateLink: "https://s.shopee.com.br/5LBu4pMveK",
   },
 ];

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fones em Foco — Curadoria de fones de ouvido</title>
+  <meta
+    name="description"
+    content="Comparamos os fones de ouvido mais vendidos da Shopee pra você não cair em furada: vendas, avaliações e comentários reais."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#topo">
+        <span class="logo-mark">🎧</span>
+        <span data-site-name>Fones em Foco</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#destaque">Destaque</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap">
+        <span class="hero-kicker">Curadoria pessoal · Shopee</span>
+        <div class="hero-grid">
+          <div>
+            <h1 data-hero-title>Fones que valem a pena — sem cair em furada</h1>
+            <p class="hero-subtitle" data-hero-subtitle>
+              A gente compara os fones mais vendidos da Shopee, lê as avaliações de
+              verdade e separa o que realmente entrega. Você economiza o tempo de
+              pesquisar (e o dinheiro de errar).
+            </p>
+            <a href="#produtos" class="btn btn-primary">Ver comparativo</a>
+          </div>
+
+          <div class="receipt">
+            <p class="receipt-title">Resumo da edição</p>
+            <p class="receipt-sub">Atualizado com base nos mais vendidos</p>
+            <div id="receipt-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DESTAQUE ================= -->
+    <section id="destaque">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Escolha do editor</span>
+          <h2>O fone que a gente recomendaria de olhos fechados</h2>
+          <p>Nosso critério: vendas reais, nota média e o que os compradores comentam — não só a ficha técnica.</p>
+        </div>
+        <div class="featured-card" id="featured-slot"></div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUTOS ================= -->
+    <section id="produtos">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Comparativo</span>
+          <h2>Mais fones comparados</h2>
+          <p>Filtre por tipo de uso e veja qual combina com o que você precisa.</p>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="no-results" id="no-results">Nenhum fone nessa categoria ainda.</p>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIAS ================= -->
+    <section id="categorias">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Navegue por uso</span>
+          <h2>Categorias</h2>
+          <p>Cada perfil de uso tem um fone diferente ideal — escolha o seu.</p>
+        </div>
+        <div class="category-list" id="category-list"></div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Como escolhemos</span>
+          <h2>Sobre a curadoria</h2>
+        </div>
+        <div class="about-box">
+          <p>
+            O <strong data-site-name>Fones em Foco</strong> nasceu de uma pergunta simples:
+            entre centenas de fones parecidos na Shopee, qual realmente vale a pena?
+          </p>
+          <p>
+            Em vez de comparar só specs de caixinha, olhamos pro que importa na prática:
+            volume de vendas, nota média e o que os compradores escrevem nos comentários
+            depois de usar o produto de verdade. É uma curadoria pessoal — como um diário
+            de compras — não uma loja.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AVISO DE AFILIADOS ================= -->
+    <section id="afiliados">
+      <div class="wrap">
+        <div class="disclaimer">
+          <strong>Aviso de transparência:</strong> este site participa do Programa de
+          Afiliados da Shopee. Ao clicar em "Ver oferta" e comprar pelo link, podemos
+          ganhar uma comissão — sem nenhum custo adicional para você. Isso ajuda a manter
+          essa curadoria funcionando.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><span data-site-name>Fones em Foco</span> · © <span id="year"></span> · Curadoria independente, não afiliada oficialmente à Shopee.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

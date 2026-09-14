@@ -98,7 +98,7 @@ function renderFeatured() {
       <p class="review">${product.review}</p>
       <div class="featured-price-row">
         <span class="price-tag">${money(product.price)}</span>
-        <a class="btn btn-primary" href="${product.affiliateLink}" target="_blank" rel="noopener sponsored nofollow">
+        <a class="btn btn-primary" href="${product.affiliateLink}" target="_blank" rel="noopener sponsored nofollow" data-track-product="${product.name}">
           Ver oferta na Shopee
         </a>
       </div>
@@ -122,7 +122,7 @@ function productCard(product) {
       <p class="review">${product.review}</p>
       <div class="card-bottom">
         <span class="price-tag">${money(product.price)}</span>
-        <a class="btn btn-primary" href="${product.affiliateLink}" target="_blank" rel="noopener sponsored nofollow">
+        <a class="btn btn-primary" href="${product.affiliateLink}" target="_blank" rel="noopener sponsored nofollow" data-track-product="${product.name}">
           Ver oferta
         </a>
       </div>
@@ -192,11 +192,22 @@ function renderYear() {
   if (el) el.textContent = new Date().getFullYear();
 }
 
+// Dispara o evento "Lead" do Meta Pixel sempre que alguém clica em
+// "Ver oferta" — é o sinal que o Facebook usa pra otimizar o anúncio.
+function trackOfferClicks() {
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("[data-track-product]");
+    if (!link || typeof fbq !== "function") return;
+    fbq("track", "Lead", { content_name: link.dataset.trackProduct });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   renderConfig();
   renderReceipt();
   renderFeatured();
   renderFilters();
+  trackOfferClicks();
   renderGrid();
   renderCategorySection();
   renderYear();

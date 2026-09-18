@@ -67,6 +67,7 @@ const PRODUCTS = [
     review:
       "Feito pra quem dorme com fone no ouvido: bem fino, não incomoda deitado de lado, e tem display LED pra ver a carga da bateria sem abrir o app. Nota máxima (5.0) dos compradores.",
     icon: "earbuds",
+    image: "img/produtos/senbenbao-x55.webp",
     affiliateLink: "https://s.shopee.com.br/50ZAHNV9jZ",
   },
   {
@@ -80,6 +81,7 @@ const PRODUCTS = [
     review:
       "Assinatura Xiaomi por menos de R$ 20 — pra quem confia mais numa marca conhecida do que num nome genérico. Compacto, estojo recarregável, e mais de 40 mil vendidos confirmam que não é só a marca que convence.",
     icon: "earbuds",
+    image: "img/produtos/xiaomi-redmi-airdots.webp",
     affiliateLink: "https://s.shopee.com.br/9zxqEapNoh",
   },
   {
@@ -145,6 +147,7 @@ const PRODUCTS = [
     review:
       "O mais vendido da nossa lista — mais de 200 mil unidades. Redução de ruído nas chamadas e conexão estável são os motivos mais citados nas avaliações de quem usa pra trabalho.",
     icon: "call",
+    image: "img/produtos/p47-headphone.webp",
     affiliateLink: "https://s.shopee.com.br/6Al7fga0l4",
   },
   {
@@ -171,6 +174,7 @@ const PRODUCTS = [
     review:
       "O mais barato da lista, mas isso não impediu 90 mil vendas: bateria leve e estojo portátil, indicado até pra quem dorme com o fone no ouvido.",
     icon: "earbuds",
+    image: "img/produtos/pro4-tws.webp",
     affiliateLink: "https://s.shopee.com.br/70KEfGw1d4",
   },
 ];

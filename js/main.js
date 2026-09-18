@@ -187,6 +187,46 @@ function renderCategorySection() {
   });
 }
 
+function renderCarousel() {
+  const track = document.getElementById("carousel-track");
+  if (!track) return;
+
+  track.innerHTML = PRODUCTS.map(
+    (p) => `
+    <a class="carousel-card" href="${p.affiliateLink}" target="_blank" rel="noopener sponsored nofollow" data-track-product="${p.name}">
+      <div class="carousel-media">${mediaMarkup(p)}</div>
+      <div class="carousel-name">${p.name}</div>
+      <div class="carousel-foot">
+        <span class="price-tag">${money(p.price)}</span>
+        <span class="go">Ver oferta →</span>
+      </div>
+    </a>`
+  ).join("");
+
+  const step = () => (track.querySelector(".carousel-card")?.offsetWidth || 230) + 14;
+  const atEnd = () => track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+  const move = (dir) => {
+    if (dir > 0 && atEnd()) track.scrollTo({ left: 0, behavior: "smooth" });
+    else track.scrollBy({ left: dir * step(), behavior: "smooth" });
+  };
+
+  document.querySelector(".carousel-btn.prev")?.addEventListener("click", () => move(-1));
+  document.querySelector(".carousel-btn.next")?.addEventListener("click", () => move(1));
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  let paused = false;
+  ["mouseenter", "focusin", "touchstart"].forEach((ev) =>
+    track.addEventListener(ev, () => (paused = true), { passive: true })
+  );
+  ["mouseleave", "focusout"].forEach((ev) =>
+    track.addEventListener(ev, () => (paused = false))
+  );
+  setInterval(() => {
+    if (!paused && !document.hidden) move(1);
+  }, 4000);
+}
+
 function renderStorefront() {
   const link = document.getElementById("vitrine-link");
   if (link && SITE_CONFIG.storefrontUrl) link.href = SITE_CONFIG.storefrontUrl;
@@ -214,6 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFilters();
   trackOfferClicks();
   renderStorefront();
+  renderCarousel();
   renderGrid();
   renderCategorySection();
   renderYear();

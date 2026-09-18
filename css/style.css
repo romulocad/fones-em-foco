@@ -581,6 +581,29 @@ section {
   display: none;
 }
 
+/* ---------- Vitrine ---------- */
+.vitrine-box {
+  background: var(--bg-raised);
+  border: 1px dashed var(--green);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.vitrine-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.vitrine-box p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
 /* ---------- Categorias ---------- */
 .category-list {
   display: grid;

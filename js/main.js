@@ -187,6 +187,11 @@ function renderCategorySection() {
   });
 }
 
+function renderStorefront() {
+  const link = document.getElementById("vitrine-link");
+  if (link && SITE_CONFIG.storefrontUrl) link.href = SITE_CONFIG.storefrontUrl;
+}
+
 function renderYear() {
   const el = document.getElementById("year");
   if (el) el.textContent = new Date().getFullYear();
@@ -208,6 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFeatured();
   renderFilters();
   trackOfferClicks();
+  renderStorefront();
   renderGrid();
   renderCategorySection();
   renderYear();

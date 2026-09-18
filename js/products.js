@@ -12,6 +12,9 @@ const SITE_CONFIG = {
     "A gente compara os fones mais vendidos da Shopee, lê as avaliações de verdade e separa o que realmente entrega. Você economiza o tempo de pesquisar (e o dinheiro de errar).",
   criterio:
     "Vendas + avaliações + comentários reais dos compradores — não só ficha técnica.",
+  // Link da vitrine de afiliado na Shopee (botão "Ver mais achados").
+  storefrontUrl:
+    "https://collshp.com/romulocad10782?share_channel_code=1&view=storefront",
 };
 
 // ============================================================
@@ -145,15 +148,15 @@ const PRODUCTS = [
     affiliateLink: "https://s.shopee.com.br/6Al7fga0l4",
   },
   {
-    id: "airpods-pro-3-style",
-    name: "Fone Bluetooth Air Pods Pro 3 (Android & iOS)",
+    id: "tws-branco",
+    name: "Fone Bluetooth TWS Branco (Android & iOS)",
     category: "custo-beneficio",
     price: 26.99,
     rating: 4.6,
     badge: "Custo-benefício",
     salesLabel: "40 mil+ vendas",
     review:
-      "Pra quem gosta do visual clássico de fone branco sem pagar preço de original. Compatível com Android e iOS, e mais de 40 mil compradores validaram que o design não é só estética.",
+      "Visual clean em branco, com estojo compacto e conexão simples. Funciona em Android e iOS, e mais de 40 mil compradores deram nota 4.6 — boa opção de fone sem fio por menos de R$ 30.",
     icon: "earbuds",
     affiliateLink: "https://s.shopee.com.br/1BMRiWadiW",
   },
